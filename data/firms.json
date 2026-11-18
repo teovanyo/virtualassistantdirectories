@@ -1,0 +1,5 @@
+[
+{"slug":"belay-atlanta-ga","name":"Belay","address":"1201 Peachtree St NE, Atlanta, GA 30361","city":"Atlanta","citySlug":"atlanta","state":"GA","zip":"30361","lat":33.786,"lon":-84.383,"phone":"+1 888-827-9918","website":"https://belaysolutions.com","rating":4.8,"reviews":512,"categories":["Virtual assistant agency","Staffing agency"],"placeId":"mock1"},
+{"slug":"time-etc-new-york-ny","name":"Time Etc","address":"151 W 30th St, New York, NY 10001","city":"New York","citySlug":"new-york","state":"NY","zip":"10001","lat":40.747,"lon":-73.991,"phone":"+1 646-569-2929","website":"https://timeetc.com","rating":4.6,"reviews":228,"categories":["Virtual assistant agency"],"placeId":"mock2"},
+{"slug":"va-usa-tampa-fl","name":"Virtual Assistants USA","address":"100 N Tampa St, Tampa, FL 33602","city":"Tampa","citySlug":"tampa","state":"FL","zip":"33602","lat":27.947,"lon":-82.458,"phone":"+1 813-555-0123","website":"https://example.com","rating":4.9,"reviews":143,"categories":["Virtual assistant agency","Offshore outsourcing"],"placeId":"mock3"}
+]
