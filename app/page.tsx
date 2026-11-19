@@ -199,7 +199,7 @@ export default function HomePage() {
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-violet">Highest rated</p>
             <h2 className="mt-1 font-display text-3xl tracking-tight sm:text-4xl">Providers buyers keep coming back to</h2>
-            <p className="mt-2 text-sm text-muted">4.7★ or better, 200+ public reviews, one per provider type.</p>
+            <p className="mt-2 text-sm text-muted">4.6★ or better, 20+ public reviews, one per provider type.</p>
           </div>
           <Link href="/top-rated" className="inline-flex items-center gap-1 text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-violet">See the ranking <ArrowRight className="h-4 w-4" aria-hidden /></Link>
         </div>

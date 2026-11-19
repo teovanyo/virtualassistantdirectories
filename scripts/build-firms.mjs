@@ -5,7 +5,7 @@ import readline from "node:readline";
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, "data");
 const RAW = path.join(DATA, "raw", "places.jsonl");
-const OUT = path.join(DATA, "firms.json");
+const OUT = path.join(DATA, "firms-unverified.json");
 
 const VA_NAME =
   /virtual assistant|\bva\b|assistant|administrative (support|service|assistant)|executive (assistant|support)|staffing|recruit|outsourc|offshore|remote (team|staff|assistant|work)|delegation|bpo|business support|back office/i;

@@ -310,8 +310,8 @@ export function getHighlights() {
   const eligible = firms
     .filter(
       (f) =>
-        (f.rating || 0) >= 4.7 &&
-        (f.reviews || 0) >= 200 &&
+        (f.rating || 0) >= 4.6 &&
+        (f.reviews || 0) >= 20 &&
         !/restaurant|hotel|medical clinic|dental clinic|physician|home care|child care|law firm|insurance agency|mortgage|loan agency|real estate agency/i.test(f.categories.join(" "))
     )
     .sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.reviews || 0) - (a.reviews || 0));
