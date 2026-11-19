@@ -15,7 +15,9 @@ Pipeline:
 ```bash
 MIN_POP=25000 node scripts/build-cities.mjs /path/to/US.txt
 MIN_POP=25000 TOP_VARIANTS=600 CONCURRENCY=80 node scripts/collect.mjs
-node scripts/build-firms.mjs
+node scripts/build-firms.mjs        # -> data/firms-unverified.json
+node scripts/verify.mjs             # treg site verification -> data/verify.jsonl
+node scripts/apply-verification.mjs # -> data/firms.json (confirmed VA providers only)
 node scripts/build-hero-map.mjs
 ```
 
