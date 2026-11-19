@@ -6,7 +6,7 @@ import { FIRM_TYPE_LABELS, filterCityFirms, firmTypes, getCity, getIndex, stateN
 import { Pagination } from "@/components/Nav";
 import { ProviderRow } from "@/components/ProviderCard";
 import { Filters } from "@/components/Filters";
-import { AdInline } from "@/components/Ads";
+import { AdBand, AdCard, AdInline } from "@/components/Ads";
 
 type Props = {
   params: Promise<{ state: string; city: string }>;
@@ -107,6 +107,8 @@ export default async function CityPage({ params, searchParams }: Props) {
         </div>
       </section>
 
+      <AdBand placement="city-top" image="hero" />
+
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-5 flex flex-wrap items-center gap-2">
           {topTypes.slice(0, 5).map(([t, n]) => (
@@ -166,6 +168,7 @@ export default async function CityPage({ params, searchParams }: Props) {
               <div className="flex items-center justify-between gap-3"><dt className="text-white/55">Avg rating</dt><dd className="mono font-bold">{avgRating ? avgRating.toFixed(1) : "-"}</dd></div>
             </dl>
             <p className="mt-4 text-[11px] leading-5 text-white/40">Ratings are public business ratings, not VirtualAssistantDirectories.com reviews.</p>
+            <div className="mt-4"><AdCard placement="city-aside" image="team" /></div>
           </aside>
         </section>
 

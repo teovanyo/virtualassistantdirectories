@@ -1,6 +1,6 @@
 import { ArrowUpRight, BadgeCheck, Check, ShieldCheck, Star, Timer, UserRoundCheck } from "lucide-react";
 
-const BASE = "https://stealthagents.com/virtual-assistant";
+const BASE = "https://stealthagents.com/";
 function href(placement: string) {
   const u = new URL(BASE);
   u.searchParams.set("utm_source", "virtualassistantdirectories");
@@ -9,7 +9,7 @@ function href(placement: string) {
   u.searchParams.set("utm_content", placement);
   return u.toString();
 }
-const callHref = "https://stealthagents.com/contact-us?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=top-rated-featured-call";
+const callHref = "https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=top-rated-featured-call";
 
 const QUALITY = [
   {

@@ -4,6 +4,7 @@ import { getIndex, searchFirms, stateName } from "@/lib/data";
 import { Breadcrumbs, Pagination } from "@/components/Nav";
 import { ProviderRow } from "@/components/ProviderCard";
 import { SearchBar } from "@/components/SearchBar";
+import { AdStrip } from "@/components/Ads";
 
 export const metadata: Metadata = { title: "Search Virtual Assistant Companies", description: "Search virtual assistant companies across the United States by name, city, state or ZIP code.", robots: { index: false, follow: true } };
 
@@ -38,6 +39,7 @@ export default async function SearchPage({ searchParams }: Props) {
         <button type="submit" className="rounded-full bg-ink px-4 py-2 font-semibold text-white">Apply</button>
         {sp.q || sp.state ? <Link href="/search" className="text-muted hover:text-ink">Clear</Link> : null}
       </form>
+      <div className="mt-6"><AdStrip placement="search-top" /></div>
       <p className="mono mt-6 text-[12px] text-muted">{result.total.toLocaleString()} {result.total === 1 ? "provider" : "providers"}{sp.q ? ` matching “${sp.q}”` : ""}{sp.state ? ` in ${stateName(sp.state.toUpperCase())}` : ""}</p>
       <div className="mt-4 space-y-2 sm:space-y-0">
         {result.firms.map((f, i) => <ProviderRow key={f.slug} firm={f} rank={i + 1} />)}

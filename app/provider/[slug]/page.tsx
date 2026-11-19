@@ -6,7 +6,7 @@ import { FIRM_TYPE_LABELS, firmTypes, getCity, getFirm, getIndex, stateName } fr
 import { getFirmContent } from "@/lib/content";
 import { ProviderCard } from "@/components/ProviderCard";
 import { Comparison } from "@/components/Comparison";
-import { AdInline } from "@/components/Ads";
+import { AdCard, AdInline } from "@/components/Ads";
 
 type Props = { params: Promise<{ slug: string }> };
 const BASE = "https://virtualassistantdirectories.com";
@@ -218,6 +218,8 @@ export default async function ProviderPage({ params }: Props) {
               <p className="mt-4 text-[11px] leading-5 text-lime-ink/70">Listing data comes from public business profiles and may be out of date. Confirm scope, pricing and terms directly with the provider.</p>
               <Link href="/about" className="mt-2 inline-flex items-center gap-1 text-[12px] font-bold underline decoration-2 underline-offset-2">Suggest a correction <ArrowUpRight className="h-3 w-3" aria-hidden /></Link>
             </div>
+
+            <div className="mt-4"><AdCard placement="provider-aside" image="flatlay" /></div>
 
             <div className="mt-4 rounded-2xl border border-line bg-card p-5">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-muted">At a glance</p>

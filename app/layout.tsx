@@ -108,7 +108,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 Search
               </Link>
               <a
-                href="https://stealthagents.com/virtual-assistant?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=header-cta"
+                href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=header-cta"
                 target="_blank"
                 rel="sponsored noopener"
                 className="rounded-full bg-lime px-4 py-2 text-[13px] font-semibold text-ink transition hover:bg-lime-soft"
@@ -146,7 +146,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <ul className="mt-3 space-y-2 text-sm text-white/65">
                 <li><Link href="/about" className="hover:text-white">About the data</Link></li>
                 <li><Link href="/about" className="hover:text-white">Claim a listing</Link></li>
-                <li><a href="https://stealthagents.com/virtual-assistant?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=footer-link" target="_blank" rel="sponsored noopener" className="hover:text-white">Hire a VA</a></li>
+                <li><a href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=footer-link" target="_blank" rel="sponsored noopener" className="hover:text-white">Hire a VA</a></li>
               </ul>
             </div>
           </div>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { getIndex } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Nav";
-import { AdBanner } from "@/components/Ads";
+import { AdBanner, AdStrip } from "@/components/Ads";
 
 export const metadata: Metadata = {
   title: { absolute: "Virtual Assistant Companies by State" },
@@ -31,7 +31,9 @@ export default function DirectoryPage() {
         </div>
       </div>
 
-      <div className="mt-8 overflow-hidden rounded-2xl border border-line bg-card">
+      <div className="mt-6"><AdStrip placement="directory-top" image="hero" /></div>
+
+      <div className="mt-6 overflow-hidden rounded-2xl border border-line bg-card">
         <div className="hidden grid-cols-[2.5rem_1fr_7rem_7rem_12rem_2rem] gap-4 border-b border-line bg-paper px-5 py-3 text-[10px] font-bold uppercase tracking-[0.14em] text-muted md:grid">
           <span>#</span><span>State</span><span>Providers</span><span>Cities</span><span>Density</span><span />
         </div>

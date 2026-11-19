@@ -5,7 +5,7 @@ import { FIRM_TYPE_LABELS, getHighlights, getIndex } from "@/lib/data";
 import { SearchBar } from "@/components/SearchBar";
 import { ProviderCard } from "@/components/ProviderCard";
 import { HomeContent } from "@/components/HomeContent";
-import { AdBanner } from "@/components/Ads";
+import { AdBanner, AdBand } from "@/components/Ads";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://virtualassistantdirectories.com" },
@@ -151,6 +151,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <AdBand placement="home-hero" eager />
+
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -233,6 +235,15 @@ export default function HomePage() {
       <AdBanner placement="home-mid" />
 
       <HomeContent />
+
+      <AdBand
+        placement="home-pre-faq"
+        tone="light"
+        image="desk"
+        headline="Your best next hire, or your money back."
+        body="Every Stealth Agents placement is backed by a free replacement guarantee. No long-term contracts, no office space, no benefits, just a dedicated virtual assistant."
+        cta="Book a free consultation"
+      />
 
       <section className="border-t border-line bg-card">
         <div className="mx-auto max-w-3xl px-4 py-14">

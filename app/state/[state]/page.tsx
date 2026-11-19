@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { FIRM_TYPE_LABELS, firmTypes, getIndex, stateName, type FirmType } from "@/lib/data";
 import { ProviderCard } from "@/components/ProviderCard";
-import { AdInline } from "@/components/Ads";
+import { AdBand, AdInline } from "@/components/Ads";
 
 type Props = { params: Promise<{ state: string }> };
 
@@ -85,6 +85,8 @@ export default async function StatePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <AdBand placement="state-top" image="team" />
 
       <div className="mx-auto max-w-6xl px-4 py-10">
         <div className="flex flex-wrap gap-2">

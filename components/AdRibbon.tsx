@@ -25,7 +25,7 @@ export function AdRibbon() {
             Need a dedicated assistant? <span className="font-bold">Stealth Agents</span> places vetted VAs in 48 hours.
           </p>
           <a
-            href="https://stealthagents.com/virtual-assistant?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=sitewide-ribbon"
+            href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=sitewide-ribbon"
             target="_blank"
             rel="sponsored noopener"
             className="inline-flex shrink-0 items-center gap-0.5 text-[12.5px] font-bold underline decoration-2 underline-offset-2"

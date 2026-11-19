@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { FIRM_TYPES, FIRM_TYPE_LABELS, firmsByType, typeStateCounts, type FirmType } from "@/lib/data";
 import { Pagination } from "@/components/Nav";
 import { ProviderCard } from "@/components/ProviderCard";
-import { AdInline } from "@/components/Ads";
+import { AdBand, AdInline } from "@/components/Ads";
 
 type Props = { params: Promise<{ type: string }>; searchParams: Promise<{ page?: string }> };
 
@@ -128,6 +128,8 @@ export default async function TypePage({ params, searchParams }: Props) {
 
         <Pagination page={current} pages={pages} makeHref={(p) => `/type/${t}${p === 1 ? "" : `?page=${p}`}`} />
       </div>
+
+      <AdBand placement="type-bottom" tone="light" image="team" headline="A dedicated assistant, not another job post." cta="See Stealth Agents" />
     </div>
   );
 }
