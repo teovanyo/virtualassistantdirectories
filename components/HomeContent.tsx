@@ -177,7 +177,7 @@ export function HomeContent() {
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-violet">How this works</p>
             <h2 className="mt-1 font-display text-2xl tracking-tight">Where the data comes from</h2>
             <p className="mt-3 text-[14px] leading-7 text-muted">
-              Listings come from public business profiles. Each record can include the name, address, phone, website, categories and the public rating and review count at the time of collection. Providers do not pay to appear, and payment does not change search order or ranking.
+              Listings come from public business profiles. Each record can include the name, address, phone, website, categories and the public rating and review count at the time of collection. Providers do not pay to appear in search results, and payment does not change search order or the independent ranking. The top-rated page has one clearly labeled sponsored featured partner.
             </p>
             <p className="mt-3 text-[14px] leading-7 text-muted">
               Profiles are editorial summaries built from listing data and local market context. They are not customer reviews, endorsements or a verification that a provider is licensed, insured or accepting clients. Confirm scope, pricing and terms directly with each provider.

@@ -128,7 +128,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <span className="font-display text-xl tracking-tight">Virtual Assistant Directories</span>
               </Link>
               <p className="mt-4 max-w-md text-sm leading-6 text-white/55">
-                A free directory of virtual assistant agencies, staffing firms, offshore teams and specialist assistants across the United States. Listings are built from public business data; providers do not pay to appear.
+                A free directory of virtual assistant agencies, staffing firms, offshore teams and specialist assistants across the United States. Listings are built from public business data; directory rankings are independent and sponsored placements are clearly labeled.
               </p>
             </div>
             <div>

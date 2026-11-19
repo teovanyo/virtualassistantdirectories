@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Is this directory free to use?",
-    a: "Yes. Listings are free to browse and providers do not pay to appear. Data comes from public business profiles and is refreshed periodically; providers can request corrections or claim their listing.",
+    a: "Yes. Listings are free to browse and providers do not pay to appear in search results or city listings. Data comes from public business profiles and is refreshed periodically; providers can request corrections or claim their listing. The top-rated page has one clearly labeled sponsored featured partner, kept separate from the independent ranking.",
   },
   {
     q: "Are the reviews on this site customer reviews?",
