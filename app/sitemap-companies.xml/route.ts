@@ -1,6 +1,8 @@
 import { getCompanies } from "@/lib/companies";
 import { BASE_URL, SITE_LASTMOD } from "@/lib/sitemap";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const companies = getCompanies();
   const locs = [`${BASE_URL}/companies`, ...companies.map((c) => `${BASE_URL}/companies/${c.slug}`)];

@@ -21,5 +21,6 @@ COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/data/firms.json ./data/firms.json
 COPY --from=builder /app/data/cities.json ./data/cities.json
 COPY --from=builder /app/data/states.json ./data/states.json
+COPY --from=builder /app/data/companies.json ./data/companies.json
 EXPOSE 3000
 CMD ["node", "server.js"]
