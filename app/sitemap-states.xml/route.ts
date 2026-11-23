@@ -4,7 +4,7 @@ import { BASE_URL, SITE_LASTMOD } from "@/lib/sitemap";
 export async function GET() {
   const { states } = getIndex();
   const urls = [
-    `${BASE_URL}/`, `${BASE_URL}/directory`, `${BASE_URL}/top-rated`, `${BASE_URL}/about`, `${BASE_URL}/site-map`,
+    `${BASE_URL}/`, `${BASE_URL}/directory`, `${BASE_URL}/top-rated`, `${BASE_URL}/about`, `${BASE_URL}/privacy`, `${BASE_URL}/terms`, `${BASE_URL}/site-map`,
     ...FIRM_TYPES.map((t) => `${BASE_URL}/type/${t}`),
     ...states.map((s) => `${BASE_URL}/state/${s.code.toLowerCase()}`),
   ];
