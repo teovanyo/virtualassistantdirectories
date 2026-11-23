@@ -151,8 +151,30 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </div>
           </div>
           <div className="border-t border-white/10">
-            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-              <p>&copy; 2026 VirtualAssistantDirectories.com</p>
+            <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <p>&copy; 2026 VirtualAssistantDirectories.com</p>
+                <a
+                  href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=referral&utm_campaign=virtual-assistant&utm_content=powered-by-footer"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Powered by Stealth Agents"
+                  className="inline-flex items-center gap-2 transition hover:opacity-100"
+                >
+                  <span className="text-[11px] uppercase tracking-[0.14em] text-white/35">Powered by</span>
+                  <span className="inline-flex items-center rounded bg-white px-2 py-1">
+                    <img
+                      src="/brand/stealth-agents-logo-black.png"
+                      alt="Stealth Agents"
+                      title="Stealth Agents"
+                      width={149}
+                      height={50}
+                      loading="lazy"
+                      className="h-5 w-auto"
+                    />
+                  </span>
+                </a>
+              </div>
               <p>Public business data. Not an endorsement or a verification of service quality.</p>
             </div>
           </div>
