@@ -102,11 +102,41 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                   {n.label}
                 </Link>
               ))}
+              <a
+                href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=referral&utm_campaign=virtual-assistant&utm_content=powered-by-header"
+                target="_blank"
+                rel="noopener"
+                aria-label="Powered by Stealth Agents"
+                className="ml-1 hidden items-center gap-2 md:inline-flex"
+              >
+                <span className="text-[10px] uppercase tracking-[0.14em] text-white/40">Powered by</span>
+                <span className="inline-flex items-center rounded bg-white px-2 py-1">
+                  <img
+                    src="/brand/stealth-agents-logo-black.png"
+                    alt="Stealth Agents"
+                    title="Stealth Agents"
+                    width={149}
+                    height={50}
+                    loading="lazy"
+                    className="h-4 w-auto"
+                  />
+                </span>
+              </a>
             </nav>
             <div className="flex items-center gap-2">
               <Link href="/search" className="rounded-full px-3 py-1.5 text-sm text-white/65 hover:text-white sm:hidden">
                 Search
               </Link>
+              <a
+                href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=referral&utm_campaign=virtual-assistant&utm_content=powered-by-mobile"
+                target="_blank"
+                rel="noopener"
+                aria-label="Powered by Stealth Agents"
+                title="Powered by Stealth Agents"
+                className="inline-flex items-center rounded bg-white px-1.5 py-1 sm:hidden"
+              >
+                <img src="/brand/stealth-agents-logo-black.png" alt="Stealth Agents" width={149} height={50} className="h-4 w-auto" />
+              </a>
               <a
                 href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=header-cta"
                 target="_blank"
@@ -151,30 +181,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </div>
           </div>
           <div className="border-t border-white/10">
-            <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-                <p>&copy; 2026 VirtualAssistantDirectories.com</p>
-                <a
-                  href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=referral&utm_campaign=virtual-assistant&utm_content=powered-by-footer"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Powered by Stealth Agents"
-                  className="inline-flex items-center gap-2 transition hover:opacity-100"
-                >
-                  <span className="text-[11px] uppercase tracking-[0.14em] text-white/35">Powered by</span>
-                  <span className="inline-flex items-center rounded bg-white px-2 py-1">
-                    <img
-                      src="/brand/stealth-agents-logo-black.png"
-                      alt="Stealth Agents"
-                      title="Stealth Agents"
-                      width={149}
-                      height={50}
-                      loading="lazy"
-                      className="h-5 w-auto"
-                    />
-                  </span>
-                </a>
-              </div>
+            <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+              <p>&copy; 2026 VirtualAssistantDirectories.com</p>
               <p>Public business data. Not an endorsement or a verification of service quality.</p>
             </div>
           </div>
