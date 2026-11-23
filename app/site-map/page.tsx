@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { FIRM_TYPE_LABELS, FIRM_TYPES, getIndex } from "@/lib/data";
+import { companiesByNiche } from "@/lib/companies";
 import { BASE_URL, SITEMAP_CHUNK_SIZE } from "@/lib/sitemap";
 import { Breadcrumbs } from "@/components/Nav";
 
@@ -32,6 +33,17 @@ export default function SiteMapPage() {
             <Link key={t} href={`/type/${t}`} className="rounded-xl border border-line bg-card px-4 py-3 text-sm font-semibold hover:border-ink">{FIRM_TYPE_LABELS[t]}</Link>
           ))}
         </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="font-display text-2xl tracking-tight">VA companies by specialty</h2>
+        <p className="mt-1 text-sm text-muted">Specialist virtual assistant brands and companies, grouped by the work they focus on.</p>
+        <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          {companiesByNiche().map((g) => (
+            <Link key={g.niche} href={`/companies#${g.niche}`} className="flex items-center justify-between gap-3 rounded-xl border border-line bg-card px-3.5 py-2.5 text-sm hover:border-ink"><span className="font-medium">{g.label}</span><span className="mono text-[10px] text-muted">{g.companies.length}</span></Link>
+          ))}
+        </div>
+        <Link href="/companies" className="mt-3 inline-flex text-sm font-semibold text-violet hover:underline">Browse all VA companies</Link>
       </section>
 
       <section className="mt-10">

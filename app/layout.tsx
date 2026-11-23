@@ -46,6 +46,7 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/directory", label: "Directory" },
+  { href: "/companies", label: "VA companies" },
   { href: "/top-rated", label: "Top rated" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
@@ -165,6 +166,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-lime">Browse</p>
               <ul className="mt-3 space-y-2 text-sm text-white/65">
                 <li><Link href="/directory" className="hover:text-white">All states</Link></li>
+                <li><Link href="/companies" className="hover:text-white">VA companies</Link></li>
                 <li><Link href="/top-rated" className="hover:text-white">Top rated</Link></li>
                 <li><Link href="/type/agency" className="hover:text-white">VA agencies</Link></li>
                 <li><Link href="/type/offshore" className="hover:text-white">Offshore teams</Link></li>

@@ -7,6 +7,7 @@ export async function GET() {
   const urls = [
     { loc: `${BASE_URL}/sitemap-states.xml`, lastmod: SITE_LASTMOD },
     { loc: `${BASE_URL}/sitemap-cities.xml`, lastmod: SITE_LASTMOD },
+    { loc: `${BASE_URL}/sitemap-companies.xml`, lastmod: SITE_LASTMOD },
     ...Array.from({ length: chunks }, (_, i) => ({ loc: `${BASE_URL}/sitemap-firms/${i + 1}`, lastmod: SITE_LASTMOD })),
   ];
   const body = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <sitemap><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>`;
