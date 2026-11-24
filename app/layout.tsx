@@ -50,6 +50,7 @@ const NAV = [
   { href: "/top-rated", label: "Top rated" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -178,6 +179,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <ul className="mt-3 space-y-2 text-sm text-white/65">
                 <li><Link href="/about" className="hover:text-white">About the data</Link></li>
                 <li><Link href="/about" className="hover:text-white">Claim a listing</Link></li>
+                <li><Link href="/contact" className="hover:text-white">Contact us</Link></li>
                 <li><Link href="/privacy" className="hover:text-white">Privacy policy</Link></li>
                 <li><Link href="/terms" className="hover:text-white">Terms of service</Link></li>
                 <li><a href="https://stealthagents.com/?utm_source=virtualassistantdirectories&utm_medium=display&utm_campaign=virtual-assistant&utm_content=footer-link" target="_blank" rel="sponsored noopener" className="hover:text-white">Hire a VA</a></li>
